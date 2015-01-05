@@ -4,13 +4,16 @@ Color picker property for [Papi](https://wp-papi.github.io/) that use the Color 
 
 ## Settings
 
+WordPress color picker support custom palettes so you can change them with the palettes option. Read more about palettes [here](https://automattic.github.io/Iris/#palettes).
+
+Example property with palettes setting:
 ```php
 $this->property([
   'type'        => 'color',
   'title'       => 'Background color',
   'slug'        => 'background_color',
   'settings'    => [
-    'palettes' => ['#000', '#fff', '#000fff', '#eaeaea', '#cccccc', '#ddd', '#010101']
+    'palettes' => ['#000', '#fff', '#000fff']
   ]
 ])
 ``
